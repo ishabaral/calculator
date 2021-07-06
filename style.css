@@ -24,23 +24,32 @@
 
 #input-box{
     position: absolute;
-    margin: 15px;
-    padding: 20px;
-    left: 27px;
-    font-size: 24px;
+    margin: 0px;
+    padding: 10px;
+    top: 111px;
+    left: 1px;
+    font-size: 30px;
     border: none;
     color: white;
     background-color: #44403b;
     outline: none;
-    direction: rtl;
+    text-align: right;
+    direction: ltr;
     letter-spacing: 0.5;
 }
-/* #input-display{
-    top: 56px;
+#input-display {
+    position: absolute;
+    top: 61px;
+    margin: 0px;
+    padding: 10px;
+    left: 72px;
+    font-size: 25px;
+    border: none;
+    color: white;
+    background-color: #44403b;
+    outline: none;
+    text-align: right;
 }
-#input-box{
-    top: 76px;
-} */
 .btn-groups{
     display: flex;
     flex-wrap: wrap;
