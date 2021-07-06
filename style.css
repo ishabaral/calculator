@@ -22,11 +22,10 @@
     margin-top: 3px;
 }
 
-#input-box{
+.input{
     position: absolute;
     margin: 15px;
     padding: 20px;
-    top: 76px;
     left: 27px;
     font-size: 24px;
     border: none;
@@ -35,6 +34,12 @@
     outline: none;
     direction: rtl;
     letter-spacing: 0.5;
+}
+#input-display{
+    top: 56px;
+}
+#input-box{
+    top: 76px;
 }
 .btn-groups{
     display: flex;
