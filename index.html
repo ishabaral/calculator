@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <link rel="shortcut icon" href="./images/calc-icon.webp">
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <div id="calc-box">
+        <div id="calc">
+            <div class="input-section">
+                <input id="input-box" type="text" placeholder="0" autofocus pattern="[0-9]">
+            </div>
+
+            <div class="btn-groups">
+
+                <button id="reset" onclick="reset()" class="sign">AC </button>
+                <button id="reset" onclick="reset()" class="sign">C </button>
+                <button onclick="displayNum('%')" class="sign">%</button>
+                <button value="/" onclick="displayNum('/')" class="sign">÷</button>
+                <button value="7" onclick="displayNum('7')">7</button>
+                <button value="8" onclick="displayNum('8')">8</button>
+                <button value="9" onclick="displayNum('9')">9</button>
+                <button value="*" onclick="displayNum('*')" class="sign">×</button>
+                <button value="4" onclick="displayNum('4')">4</button>
+                <button value="5" onclick="displayNum('5')">5</button>
+                <button value="6" onclick="displayNum('6')">6</button>
+                <button value="-" onclick="displayNum('-')" class="sign">-</button>
+                <button value="1" onclick="displayNum('1')">1</button>
+                <button value="2" onclick="displayNum('2')">2</button>
+                <button value="3" onclick="displayNum('3')">3</button>
+                <button value="+" onclick="displayNum('+')" class="sign">+</button>
+                <button value="^" onclick="displayNum('00')">00</button>
+                <button value="0" onclick="displayNum('0')">0</button>
+                <button value="." onclick="displayNum('.')">.</button>
+                <button onclick="result()" class="sign">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
