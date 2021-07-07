@@ -9,8 +9,21 @@ const clearOne = () => {
     document.getElementById("input-box").value = modifiedInput;
 }
 
-const displayNum = (num) => document.getElementById("input-box").value += num;
+const displayNum = (num) => {
+    document.getElementById("input-box").value += num;
+    let inputNum = document.getElementById("input-box").value;
 
+    let lastNum = inputNum[inputNum.length - 1];
+    let secondLastNum = inputNum[inputNum.length - 2];
+    // console.log(secondLastNum);
+    if ((lastNum == '+' || lastNum == '-' || lastNum == '*' || lastNum == '/' || lastNum == '%') &&
+        (secondLastNum == '+' || secondLastNum == '-' || secondLastNum == '*' || secondLastNum == '/' || secondLastNum == '%')) {
+        inputNum = inputNum.replace(secondLastNum, lastNum);
+        // console.log(inputNum);
+        inputNum = inputNum.substring(0, inputNum.length - 1)
+        document.getElementById("input-box").value = inputNum;
+    }
+}
 
 const displayResult = () => {
     let expression = document.getElementById("input-box").value;
