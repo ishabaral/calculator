@@ -18,9 +18,10 @@ const displayNum = (num) => {
     // console.log(secondLastNum);
     if ((lastNum == '+' || lastNum == '-' || lastNum == '*' || lastNum == '/' || lastNum == '%') &&
         (secondLastNum == '+' || secondLastNum == '-' || secondLastNum == '*' || secondLastNum == '/' || secondLastNum == '%')) {
-        inputNum = inputNum.replace(secondLastNum, lastNum);
+        // inputNum = inputNum.replace(secondLastNum, lastNum);
         // console.log(inputNum);
-        inputNum = inputNum.substring(0, inputNum.length - 1)
+        inputNum = inputNum.slice(0, inputNum.length - 2) + inputNum.slice(inputNum.length - 1)
+        // inputNum = inputNum.substring(0, inputNum.length - 1)
         document.getElementById("input-box").value = inputNum;
     }
 }
